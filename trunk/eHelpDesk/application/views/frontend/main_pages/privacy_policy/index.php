@@ -1,0 +1,1 @@
+<?php echo $this->lang->line('privacy_policy_content_main_content'); ?>

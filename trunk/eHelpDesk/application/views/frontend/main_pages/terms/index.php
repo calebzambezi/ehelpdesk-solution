@@ -1,0 +1,1 @@
+<?php echo $this->lang->line('terms_content_main_content'); ?>
