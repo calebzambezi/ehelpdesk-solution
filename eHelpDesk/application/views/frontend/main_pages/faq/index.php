@@ -1,0 +1,1 @@
+<?php echo $this->lang->line('faq_content_main_content'); ?> 
