@@ -1,12 +1,22 @@
+<div class="container">
 <?php
 
-echo form_open($this->uri->uri_string());
+echo form_open($this->uri->uri_string(),array('class'=>'form'));
 	$lookup_list['en'] = 'English';
 	$lookup_list['fr'] = 'French';
-
+?>
+<div class="control-group">
+    <div class="controls">
+<?php
 	echo form_dropdown('language_lookup', $lookup_list, $this->session->userdata('lang'));
-	echo form_submit('lang_submit', $this->lang->line('header_btn_select_lang'));
-echo form_close(); 
+	echo form_submit('lang_submit', $this->lang->line('header_btn_select_lang'),'class="btn "');
+?>
+</div>
+</div>
+
+<?php
+echo form_close();
+
 
 echo "<br />";	
 if ($this->tank_auth->is_logged_in())
