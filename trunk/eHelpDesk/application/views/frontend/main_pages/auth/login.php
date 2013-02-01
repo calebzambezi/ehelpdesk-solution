@@ -97,5 +97,5 @@ $captcha = array(
 		</td>
 	</tr>
 </table>
-<?php echo form_submit('submit', $this->lang->line('auth_login_btn_login')); ?>
+<?php echo form_submit('submit', $this->lang->line('auth_login_btn_login'),'class ="btn btn-primary"'); ?>
 <?php echo form_close(); ?>
