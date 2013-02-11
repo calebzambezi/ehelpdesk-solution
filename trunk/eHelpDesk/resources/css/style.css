@@ -1,0 +1,25 @@
+#register-sec
+{
+    position:relative;
+    margin:30px 0 0 0;
+    padding:30px 0 0 0;
+    border-top:1px solid #ddd;
+    text-align:center;
+}
+
+#register-sec:before
+{
+    content:'or';
+    position:absolute;
+    top:0;
+    left:50%;
+    margin:-11px 0 0 -7px;
+    padding:0 3px;
+    background-color:#f5f5f5;
+    font-weight:bold;
+}
+
+.center-text
+{
+    text-align:center;    
+}
