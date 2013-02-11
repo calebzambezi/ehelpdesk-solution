@@ -50,6 +50,7 @@ $lang['footer_link_contact'] = 'Contact Us';
 $lang['footer_link_faq'] = 'FAQ';
 $lang['footer_link_privacy_policy'] = 'Privacy Policy';
 $lang['footer_link_terms'] = 'Terms and Conditions';
+$lang['footer_copyrights'] = 'GMA tech Inc. All rights reserved. Powered by eHelpDesk from XP tech Inc.';
 
 //****** FOOTER - END ****** 
 
@@ -152,7 +153,7 @@ $lang['auth_login_lbl_email'] = 'Email';
 $lang['auth_login_lbl_password'] = 'Password';
 $lang['auth_login_lbl_remember_me'] = 'Remember me';
 $lang['auth_login_link_forgot_password'] = 'Forgot password';
-$lang['auth_login_link_register'] = 'Register';
+$lang['auth_login_link_register'] = 'Don\'t have an account yet? Sign up here!';
 $lang['auth_login_btn_login'] = 'Login';
 
 //*** forgot_password.php
