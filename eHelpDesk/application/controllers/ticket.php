@@ -39,7 +39,7 @@ class Ticket extends Secured_Frontend_Controller {
 			}
 		}
 		//**** URL TITLE CONFIRMATION (END) ***		
-		
+        
 		//post a reply
 		if($this->input->post('ticket_reply_submit') && $data['post']['rows'][0]->status_id != '2')
 		{
@@ -50,7 +50,7 @@ class Ticket extends Secured_Frontend_Controller {
 		//GRAB ALL ACTIVE REPLIES of the current ticket
 		$column_names = 'reply_id, reply_text, attachment, username, date_created, date_updated, ticket_id';
 		$pagin_page = 'ticket/'.$this->uri->rsegment(3).'/'.$this->uri->rsegment(4); //The URL looks like: http://localhost/ehelpdesk/ticket/##/my-ticket-title-is-here ... Page number is always tacked at the end. Therefore, we appended uri segements to 'ticket' so the page number appears after the URL title.
-		$recs_per_page = 10;
+		$recs_per_page = 5;
 		$num_of_pagin_links = 3;
 		$current_page_value = $this->uri->rsegment(5);
 		$loc_of_page_val = 4; 

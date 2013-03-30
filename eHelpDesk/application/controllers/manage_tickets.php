@@ -76,14 +76,15 @@ class Manage_tickets extends Secured_Backend_Controller {
 																				$sort_by, 
 																				$header_name);
 		}
-		
+		//$this->output->enable_profiler(TRUE);
 		$data['sort_by_dateop'] = 'dateop'; //represents date_created
 		$data['sort_by_status'] = 'status'; //represents status
-		$data['sort_by_datecl'] = 'datecl'; //represents date_closed
+		$data['sort_by_date'] = 'datecl'; //represents date_closed
 		$data['sort_by_act'] = 'act'; //represents is_ticket_active
 		$data['sort_by_lreply'] = 'lreply'; //represents latest_reply
 		$data['sort_by_title'] = 'title'; //represents "is_replied DESC, latest_reply"
 		
+        
 		$data['sort_order'] = ($this->uri->rsegment(4) == 'asc') ? 'desc' : 'asc';
 		$data['maintain_page_number'] = ($this->uri->rsegment(5)) ? $this->uri->rsegment(5) : '';
 		$data['page_title'] = $this->lang->line('view_tickets_page_title');
@@ -94,10 +95,10 @@ class Manage_tickets extends Secured_Backend_Controller {
 	//user types a bogus header name manually within the URL, routes.php will redirect user to 404.
 	private function _find_sort_column($selected_table_column)
 	{
-		$sort_columns = array("date_created" => "dateop", "status_id" => "status", "date_closed" => "datecl", "latest_reply" => "lreply", "is_ticket_active" => "act", "is_replied DESC, latest_reply" => "title"); 
+		$sort_columns = array("priority_id"=>"priority","date_created" => "dateop", "status_id" => "status", "date_closed" => "datecl", "latest_reply" => "lreply", "is_ticket_active" => "act", "is_replied DESC, latest_reply" => "title"); 
 		$sort_by = array_search($selected_table_column, $sort_columns); //returns key i.e. status_id or date_created. If none, false is returned
-		$key = (!$sort_by) ? "is_replied DESC, latest_reply" : $sort_by; //"is_replied DESC, latest_reply" default sort
-		return $key; //status_id or date_created
+		$key = (!$sort_by) ? " is_replied DESC, latest_reply" : $sort_by; //"is_replied DESC, latest_reply" default sort
+		return "priority_id DESC,". $key; //status_id or date_created
 	}
 }
 

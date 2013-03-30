@@ -63,8 +63,7 @@ $form_errors=array(
 		<?php echo form_input($login); ?>
 		
         <?php echo $form_errors[$login['name']];?><?php echo isset($errors[$login['name']])?$errors[$login['name']]:''; ?>
-        </div>
-        <input type="text" x-webkit-speech />
+        </div>        
 	    </div>
 	 
         <div class="control-group <?php echo ($form_errors[$password['name']]!=='')?'error':'' ?>">

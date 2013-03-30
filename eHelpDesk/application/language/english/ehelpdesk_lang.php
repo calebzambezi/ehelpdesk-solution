@@ -25,7 +25,7 @@ $lang['header_link_open_new_tickets'] = 'Open New Ticket';
 $lang['header_link_account_settings'] = 'Account Settings';
 $lang['header_link_logout'] = 'Logout';
 $lang['header_msg_greeting'] = 'Welcome to GMA Techs Ticketing System';
-$lang['header_btn_select_lang'] = 'Select Language';
+$lang['header_btn_select_lang'] = 'Change';
 
 //*** ADD ADMIN LABEL - JAN 12
 $lang['header_lbl_admin_features'] = 'Administration Features: ';
@@ -62,6 +62,7 @@ $lang['contact_us_lbl_name'] = 'Name ';
 $lang['contact_us_lbl_email'] = 'Email ';
 $lang['contact_us_lbl_title'] = 'Title ';
 $lang['contact_us_lbl_message'] = 'Message ';
+$lang['contact_us_header_message'] = 'If you have business inquiries or other questions, please fill out the following form to contact us. Thank you. ';
 $lang['contact_us_btn_send'] = 'Send';
 $lang['contact_us_success_message_sent'] = '<div '.CSS_CLASS_SUCCESS.'>Thanks for contacting us. Expect to hear from us within 48 hours</div>';
 $lang['contact_us_error_message_failed'] = '<div '.CSS_CLASS_ERROR.'>Email was not sent successfully. We probably have a temporary technical issue. Please try again</div>';
@@ -100,7 +101,13 @@ $lang['new_ticket_success_ticket_posted'] = '<div '.CSS_CLASS_SUCCESS.'>Your tic
 //view_tickets and manage_tickets controller
 $lang['view_tickets_page_title'] = SITE_NAME.' - View Your Tickets';
 $lang['view_tickets_lbl_count'] = 'Total Tickets: ';
-$lang['view_tickets_lbl_search'] = 'Search ';
+$lang['view_tickets_lbl_search'] = 'Search Tickets';
+$lang['view_users_lbl_search'] = 'Search Users';
+
+$lang['view_tickets_tbl_lb_info'] = 'Ticket Details:';
+$lang['view_tickets_lb_reply'] = 'Reply:';
+$lang['view_tickets_lb_add_reply'] = 'Add Reply:';
+
 $lang['view_tickets_btn_find'] = 'Find ';
 $lang['view_tickets_msg_no_posts'] = 'No Posts Found!';
 $lang['view_tickets_hdr_priority'] = 'Priority ';
@@ -114,6 +121,11 @@ $lang['manage_tickets_hdr_latest_reply'] = 'Latest Reply: ';
 $lang['manage_tickets_hdr_is_active'] = 'Is Active ';
 $lang['manage_tickets_hdr_act'] = 'Act ';
 $lang['manage_tickets_hdr_username'] = 'Username ';
+
+//reply section
+$lang['ticket_replies_hdr_id'] = 'Reply ID ';
+$lang['ticket_replies_hdr_message'] = 'Reply Message ';
+$lang['ticket_replies_hdr_attachment'] = 'Attachment ';
 
 //manage_users controller
 $lang['manage_users_hdr_user_id'] = 'User ID ';
@@ -195,7 +207,7 @@ $lang['ticket_success_ticket_closed'] = '<div '.CSS_CLASS_SUCCESS.'>Your ticket 
 $lang['download_error_no_file'] = '<div '.CSS_CLASS_ERROR.'>File doesnt exist</div>';
 
 //edit_ticket controller
-$lang['edit_ticket_page_title'] = SITE_NAME.' - Edit Ticket# ';
+$lang['edit_ticket_page_title'] = 'Edit Ticket# ';
 $lang['edit_ticket_lbl_priority'] = 'Priority ';
 $lang['edit_ticket_lbl_category'] = 'Category ';
 $lang['edit_ticket_lbl_title'] = 'Title ';

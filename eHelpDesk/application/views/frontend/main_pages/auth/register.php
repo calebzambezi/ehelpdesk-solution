@@ -35,7 +35,9 @@ $captcha = array(
 	'maxlength'	=> 8,
 ); //, "onClick='validator()'"
 ?>
+<div class="span7 offset2">
 <?php echo form_open($this->uri->uri_string(), array('name' => 'registration_form', 'onSubmit' => 'return validator();')); ?>
+
 <table>
 	<?php if ($use_username) { ?>
 	<tr>
@@ -96,6 +98,8 @@ $captcha = array(
 	<?php }
 	} ?>
 </table>
+<div>
+<p>
 <?php 
 //privacy checkbox
 $attributes = array(
@@ -103,8 +107,12 @@ $attributes = array(
     'id'   => 'cbx_privacy_policy'
 	);
 echo form_checkbox($attributes); ?>
-<span><?php echo 'Read our '.anchor('privacy-policy', $this->lang->line('auth_register_link_privacy_policy'), 'target="_blank"').' before registring'; ?></span>
+<span> <?php echo 'Read our '.anchor('privacy-policy', $this->lang->line('auth_register_link_privacy_policy'), 'target="_blank"').' before registring'; ?></span>
+</p>
 <?php echo $hsoub_captcha; ?>
-<span style="color: red;"><?php if(isset($hsoub_captcha_error)) echo $hsoub_captcha_error; ?></span>
-<?php echo form_submit('register', $this->lang->line('auth_register_btn_register')); ?>
+<p style="color: red;"><?php if(isset($hsoub_captcha_error)) echo $hsoub_captcha_error; ?></p>
+<?php echo form_submit('register', $this->lang->line('auth_register_btn_register'),'class="btn btn-primary"'); ?>
 <?php echo form_close(); ?>
+</div>
+</div>
+<br class="clear"/>

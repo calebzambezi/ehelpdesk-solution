@@ -1,7 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$config['full_tag_open'] = '<ul id="pagination-flickr">';
-$config['full_tag_close'] = '</ul>';
+$config['full_tag_open'] = '<div class="pagination pull-right"><ul>';
+$config['full_tag_close'] = '</ul></div>';
 
 // First Links
 $config['first_link'] = 'FirXst';
@@ -24,8 +24,8 @@ $config['prev_tag_open'] = '<li class="previous-off">';
 $config['prev_tag_close'] = '</li>';
 
 // Current Link
-$config['cur_tag_open'] = '<li class="active">';
-$config['cur_tag_close'] = '</li>';
+$config['cur_tag_open'] = '<li class="active"><a>';
+$config['cur_tag_close'] = '</a></li>';
 
 // Digit Link
 $config['num_tag_open'] = '<li>';

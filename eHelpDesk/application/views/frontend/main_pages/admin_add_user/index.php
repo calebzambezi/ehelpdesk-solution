@@ -9,10 +9,9 @@
 		echo '<div class="error_msg_section">'.$error_messages.'</div>';
 	}
 ?>
-
+<div>
 <?php echo form_open($this->uri->uri_string()); ?>
-	<ul>
-		<li>
+	
 			<?php
 				echo form_label($this->lang->line('admin_edit_user_lbl_groupid'), 'groupid_lookup_label');
 				foreach ($groups['rows'] as $row)
@@ -22,19 +21,15 @@
 
 				echo form_dropdown('groupid_lookup', $lookup_list, (isset($current_group_id)) ? $current_group_id : '');
 			?>
-		</li>
-		<li>
+	
 			<?php echo form_label('Username'); ?>
 			<?php echo form_input('admin_add_user_username', set_value('admin_add_user_username')); ?>
-		</li>
-		<li>
+	
 			<?php echo form_label('Email Address'); ?>
 			<?php echo form_input('admin_add_user_email', set_value('admin_add_user_email')); ?>
-		</li>
-		<li>
+	
 			<?php echo form_label('Password'); ?>
 			<?php echo form_password('admin_add_user_password', set_value('admin_add_user_password')); ?>
-		</li>
-	</ul>
-<?php echo form_submit('admin_add_user_submit', $this->lang->line('admin_add_user_add')); ?>
+	</div>
+<?php echo form_submit('admin_add_user_submit', $this->lang->line('admin_add_user_add'), 'class="btn btn-primary"'); ?>
 <?php echo form_close(); ?>
