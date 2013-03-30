@@ -24,8 +24,8 @@ $lang['header_link_my_tickets'] = 'My Tickets';
 $lang['header_link_open_new_tickets'] = 'Open New Ticket';
 $lang['header_link_account_settings'] = 'Account Settings';
 $lang['header_link_logout'] = 'Logout';
-$lang['header_msg_greeting'] = '<h1>WELCOME TO '.SITE_NAME.' Support Center</h1>';
-$lang['header_btn_select_lang'] = 'Select Language';
+$lang['header_msg_greeting'] = 'WELCOME TO '.SITE_NAME.' Support Center';
+$lang['header_btn_select_lang'] = 'Change';
 
 //*** ADD ADMIN LABEL - JAN 12
 $lang['header_lbl_admin_features'] = 'Administration Features: ';

@@ -23,3 +23,44 @@
 {
     text-align:center;    
 }
+
+#search-header form
+{
+    margin-bottom:0;
+}
+
+#search-header .pagination
+{
+    margin:0;
+}
+#search-header
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.clear
+{
+    clear:both;
+}
+
+#banner
+{
+    background-color: Black;
+}
+
+#reply-sec .pagination
+{
+    margin: 0;
+}
+
+.replies .media
+{
+    margin:5px 0 0 0;
+}
+
+.replies-msg
+{
+    padding: 15px;
+    border-left: 5px solid #dddddd;
+}

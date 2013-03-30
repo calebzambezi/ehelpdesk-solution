@@ -13,8 +13,13 @@
     <style type="text/css">
     body
         {
-            background-image:url('<?php echo base_url();?>resources/repeat_texture.jpg');
+            padding-top:40px;
         }
+        
+        #content{
+            
+        }
+        
 </style>
 </head>
 <body>
